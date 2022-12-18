@@ -9,6 +9,8 @@
     --white-grey: #ffffff99;
     --header-gray: #ececec;
     --card-border: #eeeeee;
+    --icon-unactive: #afb1b8;
+    --icon-footer-unactive: rgba(255, 255, 255, 0.1);
 }
 
 /*reset*/
@@ -50,6 +52,7 @@ body {
 .active:hover,
 .active:focus {
     color: var(--main-blue);
+    fill: var(--main-blue);
 }
 
 .list-no-marker {
@@ -270,7 +273,7 @@ body {
 .section-our-strengths-header {
     font-weight: 700;
     line-height: 1.14;
-    margin-bottom: 10px;
+    margin: 30px 0 10px;
 }
 
 .section-our-strengths-content {
@@ -279,7 +282,8 @@ body {
 }
 
 .section-what-we-do-header,
-.section-our-team-header {
+.section-our-team-header,
+.section-our-clients {
     margin-bottom: 50px;
 }
 .section-what-we-do-items {
@@ -311,6 +315,10 @@ body {
 
 .card-content {
     color: var(--main-grey);
+}
+
+.section-our-clients-items {
+    gap: 30px;
 }
 
 /*portfolio*/
@@ -345,4 +353,77 @@ body {
 /*other*/
 .item-last {
     margin-right: 0;
+}
+
+/*icons*/
+.section-our-strengths-icons {
+    background: var(--button-color);
+    border-radius: 4px;
+}
+
+.contact-icon {
+    margin-right: 10px;
+}
+
+.section-our-clients-icons {
+    border: solid 1px var(--icon-unactive);
+    border-radius: 4px;
+    fill: var(--icon-unactive);
+}
+
+.section-our-clients-icons:hover,
+.section-our-clients-icons:focus {
+    fill: var(--main-blue);
+    border: 1px solid var(--main-blue);
+    cursor: pointer;
+}
+
+.section-our-team-icons-box {
+    width: 206px;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+.section-our-team-icons {
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    fill: var(--icon-unactive);
+}
+
+.section-our-team-icons:hover,
+.section-our-team-icons:focus {
+    background-color: var(--main-blue);
+    fill: var(--main-white);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/*icons footer*/
+.header-join {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    fill: var(--main-white);
+}
+.box-join {
+    width: 206px;
+    display: flex;
+    justify-content: space-between;
+    fill: var(--main-white);
+}
+.join-icons {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--icon-footer-unactive);
+    align-items: center;
+    justify-content: center;
+}
+.join-icons:hover,
+.join-icons:focus {
+    background-color: var(--button-blue);
+    cursor: pointer;
 }
