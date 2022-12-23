@@ -118,6 +118,10 @@ body {
     margin: 0 0 34px 0;
 }
 
+.flexbox-contact {
+    gap: 0 10px;
+}
+
 /*Buttons*/
 .button {
     cursor: pointer;
@@ -383,6 +387,10 @@ body {
 .section-our-strengths-icons {
     background: var(--button-color);
     border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-icon {
@@ -393,6 +401,10 @@ body {
     border: solid 1px var(--icon-unactive);
     border-radius: 4px;
     fill: var(--icon-unactive);
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
 }
 
 .section-our-clients-icons:hover,
